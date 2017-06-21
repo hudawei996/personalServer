@@ -87,6 +87,12 @@ redirectPort改成ssl的connector的端口443，重启后便会生效。
 配置完后重启tomcat即可生效，若无法通过https访问可查看 `tomcat/log/catalina.yyyy-mm-dd.log` 日志文件
 > 若使用Apache、IIS、Nginx 服务器可以参考 [https://www.qcloud.com/document/product/400/4143]()
 
+### 如何获取Access Key ID和Access Key Secret ？
+
+登录阿里云，点击控制台，鼠标移动到用户名上会弹出如下窗口，点击 accesskeys 即可看到Access Key ID和Access Key Secret
+
+
+![img](https://github.com/android-notes/personalServer/blob/master/ali-key.png?raw=true)
 
 
 ### 下面是搭建的私人服务器
