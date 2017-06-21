@@ -61,14 +61,6 @@ public class BandDomain {
             modifyDomainRecord(subDomain, ip, recordId);
         } else {//不存在解析记录，需要添加
             // 添加解析
-//       http://alidns.aliyuncs.com/?
-//       Action=AddDomainRecord
-//       DomainName=example.com
-//       RR=www
-//       Type=A
-//       Value=202.106.0.20
-//       TTL=600
-//       Line=default
             Logger.log("添加解析>>>>>>>>>");
             Map<String, String> params = getCommonParam();
             params.put("Action", "AddDomainRecord");
@@ -85,12 +77,6 @@ public class BandDomain {
 
     private static void modifyDomainRecord(String subDomain, String ip, String recordId) {
         // 修改解析
-//       http://alidns.aliyuncs.com/?
-//       Action=UpdateDomainRecord
-//       RecordId=123142342
-//       RR=www
-//       Type=A
-//       Value=202.106.0.20
         Map<String, String> params = getCommonParam();
         params.put("Action", "UpdateDomainRecord");
         params.put("RecordId", recordId);
@@ -121,16 +107,6 @@ public class BandDomain {
     private static String execute(Map<String, String> params) {
         String signature = getSignature(params);
 
-//        Logger.log(signature);
-//        https://alidns.aliyuncs.com/
-//        ?Format=xml
-//                &Version=2015-01-09
-//                &Signature=Pc5WB8gokVn0xfeu%2FZV%2BiNM1dgI%3D
-//                &SignatureMethod=HMAC-SHA1
-//                &SignatureNonce=15215528852396
-//                &SignatureVersion=1.0
-//                &AccessKeyId=key-test
-//                &Timestamp=2015-01-09T12:00:00Z
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder
                 .append(SERVER)
@@ -189,15 +165,6 @@ public class BandDomain {
 
     private static Map<String, String> getCommonParam() {
         //   公共参数
-//    https://alidns.aliyuncs.com/
-//    Format=xml
-//    Version=2015-01-09
-//    Signature=Pc5WB8gokVn0xfeu%2FZV%2BiNM1dgI%3D
-//    SignatureMethod=HMAC-SHA1
-//    SignatureNonce=Math.random()
-//    SignatureVersion=1.0
-//    AccessKeyId=yourkey
-//    Timestamp=2015-01-09T12:00:00Z
         Map<String, String> params = new TreeMap<>();
         //公共参数
         params.put("Format", "JSON");

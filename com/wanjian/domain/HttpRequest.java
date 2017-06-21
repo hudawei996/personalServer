@@ -8,6 +8,10 @@ import java.net.URL;
 
 /**
  * Created by wanjian on 2017/6/16.
+ * <p>
+ * openJDK中HttpURLConnection有bug，请求阿里云服务器会报错，若
+ * 一定要使用openJDK可以把该类中的HttpURLConnection替换成其他
+ * http库，比如okhttp
  */
 
 public class HttpRequest {

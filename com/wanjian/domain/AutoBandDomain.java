@@ -4,6 +4,8 @@ package com.wanjian.domain;
  * Created by wanjian on 2017/6/16.
  * <p>
  * 参考  https://help.aliyun.com/document_detail/29778.html?spm=5176.doc29776.6.620.r6SQl3
+ * <p>
+ *
  */
 
 public class AutoBandDomain {
