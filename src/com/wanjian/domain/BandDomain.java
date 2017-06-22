@@ -16,8 +16,8 @@ import java.util.UUID;
  */
 
 public class BandDomain {
-    private static final String ID = "LTAIyiAFddm71X1N";//你的Access Key ID
-    private static final String SECRET = "PZyGsbIklgqD47lf6MBqPRwNykqwKW";//你的Access Key Secret
+    private static final String ID = "";//你的Access Key ID
+    private static final String SECRET = "";//你的Access Key Secret
     private static final String SERVER = "http://alidns.aliyuncs.com";//阿里云接口
 
 
