@@ -20,7 +20,6 @@ public class AutoBandDomain {
 
 
     public static void main(String[] args) {
-
         String originIp = null;
         while (true) {
             Logger.log(">>>>>>获取IP....");

@@ -12,10 +12,8 @@
 * 修改` BandDomain.ID和BandDomain.SECRET`为你的阿里云`Access Key ID`和`Access Key Secret`(如何获取Access Key ID和Access Key Secret见下文)
 
 #### 运行代码
-* mac和linux用户直接运行 run.sh 即可（命令窗口切换目录到工程跟目录，然后执行` sh run.sh`），windows用户在命令窗口设置`CLASSPATH`后在项目跟目录运行
-`javac  com/wanjian/domain/AutoBandDomain.java`
-`java  com.wanjian.domain.AutoBandDomain`即可
- * 当然也可以把代码复制到eclipse等java编辑器中，同时加入`commons-codec-1.10.jar`和`gson-2.8.1.jar`依赖后运行`AutoBandDomain`
+* mac和linux用户命令窗口切换目录到工程跟目录，运行` sh run.sh`，windows用户双击 `run_wind.bat`即可
+* 当然也可以把代码复制到eclipse等java编辑器中，同时加入`commons-codec-1.10.jar`和`gson-2.8.1.jar`依赖后运行`AutoBandDomain`
 
 
 ### 注意
